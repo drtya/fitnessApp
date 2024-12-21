@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="exercise">
+        <!--
+        |30|-seconds
+        |x10|-number of repeat
+        -->
+        <item>Relax|30|relax.gif</item><!-- 0 -->
+        <item>Dumbbell biceps curl|30|dumbbell_bicep_curl.gif</item><!-- 1 -->
+        <item>Dumbbell back swing|x10|dumbbell_back_swing.gif</item><!-- 2 -->
+        <item>Squat with dumbbell raise|x10|squat_with_dumbbell_raise.gif</item><!-- 3 -->
+        <item>Standing dumbbell raise|x15|standing_dumbbell_raise.gif</item><!-- 4 -->
+        <item>Dumbbell squats|x10|dumbbell_squats.gif</item><!-- 5 -->
+        <item>Kettlebell squat raise|30|kettlebell_squat_raise.gif</item><!-- 6 -->
+        <item>Step back|x10|step_back.gif</item><!-- 7 -->
+    </string-array>
+    <string-array name="days_exercises">
+        <item>1,0,2,0,5,0,3,0,2,0,7</item><!-- 0 -->
+        <item>1,0,2,0,5,0,3,0,2,0,7,0,6</item><!-- 1 -->
+        <item>1,0,2,0,5,0,3,0,2,0,7,0,6</item><!-- 2 -->
+    </string-array>
+</resources>
