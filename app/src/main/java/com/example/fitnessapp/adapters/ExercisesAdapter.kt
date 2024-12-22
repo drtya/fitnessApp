@@ -8,13 +8,14 @@ import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.example.fitnessapp.R
 import com.example.fitnessapp.databinding.ExerciseListItemBinding
+import com.example.fitnessapp.db.ExercisesModel
 import pl.droidsonroids.gif.GifDrawable
 
 class ExercisesAdapter :
     ListAdapter<ExercisesModel, ExercisesAdapter.ExercisesHolder>(MyComparator()) {
     class ExercisesHolder(view: View): RecyclerView.ViewHolder(view){
         private val binding = ExerciseListItemBinding.bind(view)
-        fun setData(exercise:ExercisesModel)= with(binding){
+        fun setData(exercise: ExercisesModel)= with(binding){
             tvName.text =exercise.name
             tvCount.text = exercise.time
             chB.isChecked = exercise.isDone

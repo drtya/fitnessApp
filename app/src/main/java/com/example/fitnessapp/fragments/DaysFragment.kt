@@ -12,9 +12,9 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.fitnessapp.R
-import com.example.fitnessapp.adapters.DayModel
+import com.example.fitnessapp.db.DayModel
 import com.example.fitnessapp.adapters.DaysAdapter
-import com.example.fitnessapp.adapters.ExercisesModel
+import com.example.fitnessapp.db.ExercisesModel
 import com.example.fitnessapp.databinding.FragmentDaysBinding
 import com.example.fitnessapp.utils.ActionBarUtils
 import com.example.fitnessapp.utils.DialogManager

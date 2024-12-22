@@ -8,6 +8,7 @@ import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.example.fitnessapp.R
 import com.example.fitnessapp.databinding.DaysListItemBinding
+import com.example.fitnessapp.db.DayModel
 
 class DaysAdapter(var listener: Listener) :
     ListAdapter<DayModel, DaysAdapter.DayHolder>(MyComparator()) {

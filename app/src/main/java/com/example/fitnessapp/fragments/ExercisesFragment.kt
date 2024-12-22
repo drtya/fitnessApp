@@ -9,7 +9,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import com.example.fitnessapp.R
-import com.example.fitnessapp.adapters.ExercisesModel
+import com.example.fitnessapp.db.ExercisesModel
 import com.example.fitnessapp.databinding.ExerciseBinding
 import com.example.fitnessapp.utils.ActionBarUtils
 import com.example.fitnessapp.utils.FragmentManager
@@ -84,13 +84,13 @@ class ExercisesFragment : Fragment() {
 
 
 
-    private fun showExercise(exercise:ExercisesModel) = with(binding){
+    private fun showExercise(exercise: ExercisesModel) = with(binding){
         imMain.setImageDrawable( GifDrawable(root.context.assets,exercise.image))
         tvName.text = exercise.name
         val title = "$exCounter / ${exList?.size}"
         ActionBarUtils().setActionBar(activity as AppCompatActivity,title)
     }
-    private fun setExerciseType(exercise:ExercisesModel) = with(binding){
+    private fun setExerciseType(exercise: ExercisesModel) = with(binding){
         if (exercise.time.startsWith("x")){
             binding.tvTime.text = exercise.time
         }
@@ -99,7 +99,7 @@ class ExercisesFragment : Fragment() {
         }
     }
 
-    private fun startTimer(exercise:ExercisesModel) = with(binding){
+    private fun startTimer(exercise: ExercisesModel) = with(binding){
         progressBar.max = exercise.time.toInt()*1000
         timer?.cancel()
         timer = object : CountDownTimer(exercise.time.toLong()*1000,10){
